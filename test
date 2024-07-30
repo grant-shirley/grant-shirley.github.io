@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Shirley</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F0EAD6; /* Eggshell */
+            color: #000; /* Black */
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #0033CC; /* Royal Blue */
+        }
+        h2 {
+            color: #0033CC; /* Royal Blue */
+            margin-bottom: 15px;
+        }
+        section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info p, .skills ul, .education ul, .experience ul, .research ul {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grant Shirley</h1>
+    <p>ETSU Math/Physics Student</p>
+    <img src="path/to/your/photo.jpg" alt="Grant Shirley" /> <!-- Add your photo here -->
+</header>
+
+<section class="contact-info">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:grant_shirley@outlook.com">grant_shirley@outlook.com</a></p>
+    <p>Phone: (931) 265-6901</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/grant-shirley-5a015b221/" target="_blank">linkedin.com/in/grant-shirley-5a015b221</a></p>
+    <p>GitHub: <a href="https://github.com/grant-shirley" target="_blank">github.com/grant-shirley</a></p>
+    <p>Twitter: <a href="https://x.com/combinat0rics">x.com/combinat0rics</a></p>
+</section>
+
+<section class="education">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor of Science in Mathematics, Minor in Physics</strong></li>
+        <li>East Tennessee State University, Expected Graduation: May 2025</li>
+        <li>Relevant Courses: Applied Combinatorics and Problem Solving, Intro to Graph Theory, Intro to Abstract Algebra I and II, Analysis I and II, Condensed Matter Physics</li>
+    </ul>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>R, LaTeX</li>
+        <li>Technical Writing</li>
+        <li>Problem-Solving</li>
+    </ul>
+</section>
+
+<section class="experience">
+    <h2>Experience</h2>
+    <ul>
+        <li>
+            <strong>Peer Mentor</strong><br>
+            Combinatorics and Coding Theory in the Tropics<br>
+            June 2024 - August 2024, Ponce, PR
+            <ul>
+                <li>Gave lectures on mathematical reasoning, linear algebra, abstract algebra, and combinatorics.</li>
+                <li>Assisted fellow REU students with mathematical study and research in several projects.</li>
+                <li>Served as a liaison between REU participants and professors by coordinating meetings.</li>
+                <li>Provided guidance and mentorship to younger mathematics and computer science students.</li>
+                <li>Assisted in conflict resolution among REU participants and wrote a code of conduct for shared living space.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Researcher</strong><br>
+            Combinatorics and Coding Theory in the Tropics<br>
+            June 2023 - August 2023, Ponce, PR
+            <ul>
+                <li>Studied under experienced mathematicians in topics like Abstract Algebra, Coding Theory, and Number Theory.</li>
+                <li>Engaged in guided and self-directed research in Combinatorics, Graph Theory, and Matrix Theory.</li>
+                <li>Collaborated with undergraduate students on various discrete math projects.</li>
+                <li>Presented original research at REU and in talks at Joint Mathematics Meetings 2024 and MAA's 2024 Southeast Section Meeting.</li>
+                <li>Currently preparing research for publication with fellow REU students and affiliated professors.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="research">
+    <h2>Research</h2>
+    <ul>
+        <li>
+            <strong>Fubini Rankings and the Hunt for the Lucky Statistic</strong><br>
+            Studied sets of parking functions and their properties using combinatorics and probability theory.
+        </li>
+        <li>
+            <strong>Universal Cycles of Integer Partitions and Compositions</strong><br>
+            Analyzed de Bruijn cycles of specialized integer sequences using graph theory and combinatorial methods.
+        </li>
+        <li>
+            <strong>de Bruijn Cycles: A Novel Approach</strong><br>
+            Explored original applications of de Bruijn's Theorem to injective functions, ranked permutations, and multisets.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Grant Shirley. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
