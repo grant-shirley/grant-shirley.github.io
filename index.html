@@ -8,14 +8,16 @@
     <style>
         body {
             font-family: Verdana, sans-serif;
-            margin: 50px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
         header {
             text-align: center;
             padding: 50px 0;
+            background-color: #007BFF;
+            color: white;
         }
         h1 {
             margin: 0;
@@ -24,18 +26,39 @@
         h2 {
             color: #007BFF;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
         section {
-            margin: 20px 0;
+            margin: 20px auto;
             padding: 20px;
+            max-width: 800px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0.2, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        .contact-info, .skills, .education, .experience {
-            margin-bottom: 20px;
+        .hidden {
+            display: none;
         }
-        .contact-info p, .skills ul, .education ul, .experience ul {
-            margin: 9px 0;
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -46,40 +69,36 @@
     <p>ETSU Math/Physics undergraduate</p>
 </header>
 
-<section class="contact-info">
-    <h2>Contact Information</h2>
-    <p>Email: grant_shirley@outlook.com</p>
-    <p>Phone: (931) 265-6901</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/grant-shirley-5a015b221/" target="_blank">https://www.linkedin.com/in/grant-shirley-5a015b221/</a></p>
-    <p>GitHub: <a href="https://github.com/grant-shirley" target="_blank">github.com/grant-shirley</a></p>
-    <p>Twitter: <a href="https://x.com/combinat0rics">https://x.com/combinat0rics</a></p>
-</section>
+<nav>
+    <a href="#about_me">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact-info">Contact</a>
+</nav>
 
-<section class="education">
+
+<section id="about_me" class="hidden">
+    <h2>About Me</h2>
+	Thanks for visiting! My name is Grant Shirley, and I'm an undergraduate math major/physics minor interested in discrete math, probability and statistics, and mathematical physics. I am excited about math history, and an enthusiastic advocate for accessibility in mathematics. Outside of math, I spend a lot of time making music; I sing tenor in a barbershop quartet, I sing bass for an a cappella group, and I play the sousaphone in ETSU's marching band! I'm currently preparing to apply to PhD programs in mathematics, and am hoping to specialize in combinatorics or probability and statistics.
     <h2>Education</h2>
     <ul>
-        <li>Bachelor of Science in Mathematics, Minor in Physics</li>
-        East Tennessee State University, Expected Graduation: May 2025</li>
-        Relevant Courses: Applied Combinatorics and Problem Solving, Intro to Graph Theory, Intro to Abstract Algebra I and II, Analysis I and II, Condensed Matter Physics</li>
+        <li><strong>Bachelor of Science in Mathematics, Minor in Physics</strong></li>
+        East Tennessee State University, Expected Graduation: May 2025<br>
+        Relevant Courses:
+	<ul>
+		<li>Applied Combinatorics and Problem Solving</li>
+		<li>Intro to Graph Theory</li>
+		<li>Intro to Abstract Algebra I and II</li>
+		<li>Analysis I and II</li>
+		<li>Condensed Matter Physics</li>
+	</ul>
     </ul>
-</section>
 
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>R, LaTeX</li>
-        <li>Technical Writing</li>
-        <li>Problem-Solving</li>
-    </ul>
-</section>
-
-<section class="experience">
     <h2>Experience</h2>
     <ul>
         <li>
             <strong>Peer Mentor</strong><br>
             Combinatorics and Coding Theory in the Tropics<br>
-            June 2024 - August 2024
+            June 2024 - August 2024<br>
             Ponce, PR
             <ul>
                 <li>Gave lectures on topics such as mathematical reasoning, linear algebra, abstract algebra, and combinatorics.</li>
@@ -92,7 +111,7 @@
         <li>
             <strong>Researcher</strong><br>
             Combinatorics and Coding Theory in the Tropics<br>
-            June 2023 - August 2023
+            June 2023 - August 2023<br>
             Ponce, PR
             <ul>
                 <li>Studied under experienced mathematicians in various topics such as Abstract Algebra, Coding Theory and Number Theory.</li>
@@ -103,29 +122,80 @@
             </ul>
         </li>
     </ul>
+
+<h2>Skills</h2>
+    <ul>
+        <li>R, LaTeX</li>
+        <li>Technical Writing</li>
+        <li>Problem Solving</li>
+    </ul>
 </section>
 
-<section class="research">
-    <h2>Research</h2>
+<section id="projects" class="hidden">
+    My research interests are currently combinatorics, graph theory, and discrete statistics, and I'm open to collaboration on projects in discrete math, number theory, and mathematical physics. The following are three of the summer REU projects that I'm currently working with fellow students to prepare for submission to journals:
+
+    <h2>REU Projects</h2>
     <ul>
         <li>
             <strong>Fubini Rankings and the Hunt for the Lucky Statistic</strong><br>
             Used combinatorics and probability theory to study sets of parking functions and their properties.
         </li>
         <li>
-            <strong>Universal Cycles of Integer Partitions and Compositions</strong><br>
-            Used graph theory and combinatorial methods to study deBruijn cycles of specialized integer sequences.
-        </li>
-        <li>
             <strong>deBruijn Cycles: A Novel Approach</strong><br>
             Used graph theory and combinatorial methods to approach original applications of deBruijn's Theorem to mathematical objects including injective functions, ranked permutations, and multisets.
         </li>
     </ul>
+I've also continued work on deBruijn cycles with a professor at ETSU to prepare the following for submission:
+    <ul>
+        <li>
+            <strong>Universal Cycles of Integer Partitions and Compositions</strong><br>
+            Used graph theory and combinatorial methods to study deBruijn cycles of specialized integer sequences.
+        </li>
+    </ul>
+<h2>Conferences</h2>
 </section>
 
-<footer>
-    <p>&copy; 2024 Grant Shirley. All Rights Reserved.</p>
-</footer>
+<section id="contact-info">
+    <h2>Contact Information</h2>
+    Thank you for checking out my website, and I hope you decide to reach out! Feel free to contact me in the following ways:
+    <p>Email: grant_shirley@outlook.com</p>
+    <p>Phone: (931) 265-6901</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/grant-shirley-5a015b221/" target="_blank">https://www.linkedin.com/in/grant-shirley-5a015b221/</a></p>
+    <p>GitHub: <a href="https://github.com/grant-shirley" target="_blank">github.com/grant-shirley</a></p>
+    <p>Twitter: <a href="https://x.com/combinat0rics" target="_blank">https://x.com/combinat0rics</a></p>
+</section>
+
+
+<script>
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    // Function to display the selected section
+    function displaySection(sectionId) {
+        sections.forEach(section => section.classList.add('hidden'));
+        document.querySelector(sectionId).classList.remove('hidden');
+    }
+
+    // Check for the last viewed section in localStorage
+    const lastSection = localStorage.getItem('lastSection') || '#about_me';
+    displaySection(lastSection);
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            sections.forEach(section => section.classList.add('hidden'));
+            document.querySelector(link.getAttribute('href')).classList.remove('hidden');
+        });
+    });
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSection = link.getAttribute('href');
+            displaySection(targetSection);
+            localStorage.setItem('lastSection', targetSection);
+        });
+    });
+</script>
 
 </body>
 </html>
