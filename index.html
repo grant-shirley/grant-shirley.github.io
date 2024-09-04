@@ -125,10 +125,12 @@
 
 <h2>Skills</h2>
     <ul>
-        <li>LaTeX, R</li>
-        <li>Technical Writing</li>
+        <li>LaTeX, R, Python</li>
+        <li>Technical Writing, Mathematical and Scientific Communication</li>
         <li>Problem Solving</li>
     </ul>
+<h2>Resume</h2>
+	<a href="grant-shirley.github.io/Resume-6.pdf" target="_blank">[View Resume]</a>
 </section>
 
 <section id="projects" class="hidden">
@@ -139,10 +141,12 @@
         <li>
             <strong>Fubini Rankings and the Hunt for the Lucky Statistic</strong><br>
             Used combinatorics and discrete statistics to study sets of parking functions and their properties.
+		<a href="grant-shirley.github.io/REU_2024_Ponce___Lucky_Cars-8.pdf" target="_blank">[View Slides]</a>
         </li><br>
         <li>
             <strong>deBruijn Cycles: A Novel Approach</strong><br>
             Used graph theory and combinatorial methods to approach original applications of deBruijn's Theorem to mathematical objects including injective functions, ranked permutations, and multisets.
+		<a href="grant-shirley.github.io/Ucycles2023-7.pdf" target="_blank">[View Slides]</a>
         </li>
     </ul>
 I've also continued work on deBruijn cycles with a professor at ETSU to prepare the following for submission:
@@ -150,13 +154,15 @@ I've also continued work on deBruijn cycles with a professor at ETSU to prepare 
         <li>
             <strong>Universal Cycles of Integer Partitions and Compositions</strong><br>
             Used graph theory and combinatorial methods to study deBruijn cycles of specialized integer sequences.
+		<a href="grant-shirley.github.io/Ucycles_and_Gucycles_of_Integer_Compositions_and_Partitions-6.pdf" target="_blank">[View Slides]</a>
         </li>
     </ul>
-The following is a project I've worked on with an REU group that we are not currently preparing for submission:
+The following is a project I've worked on with an REU group but we are not currently preparing for submission:
     <ul>
       <li>
           <strong>Rose Conjecture: Total Acquisition on Diameter Two Graphs</strong><br>
           Used methods from graph theory, combinatorics, probability, and matrix theory to approach an unproven conjecture from a previous REU session regarding a property of bipartite multigraphs. As of yet, it remains unproven but we are continuing to work on it.
+	      <a href="grant-shirley.github.io/Rose_Lovasz_2024-3.pdf" target="_blank">[View Slides]</a>
       </li>
     </ul>
 <h2>Conferences</h2>
@@ -206,14 +212,7 @@ The following are conferences I've attended to present research and learn more a
     const lastSection = localStorage.getItem('lastSection') || '#about_me';
     displaySection(lastSection);
 
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            sections.forEach(section => section.classList.add('hidden'));
-            document.querySelector(link.getAttribute('href')).classList.remove('hidden');
-        });
-    });
-    links.forEach(link => {
+        links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetSection = link.getAttribute('href');
