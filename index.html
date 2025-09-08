@@ -9,7 +9,7 @@
         body {
             font-family: Verdana, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 0 0 60px 0; /* bottom padding to prevent footer overlap */
             background-color: #f4f4f4;
             color: #333;
         }
@@ -60,30 +60,28 @@
             width: 100%;
             bottom: 0;
         }
-	 /* Additional styles for photo section */
         .photo-group {
             margin: 30px 0;
         }
-
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
         }
-
         .photo-item {
             text-align: center;
         }
-
         .photo-item img {
             width: 100%;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
         .photo-item p {
             margin-top: 10px;
             color: #555;
+        }
+        li {
+            margin-bottom: 0.5em; /* replaces <br> spacing */
         }
     </style>
 </head>
@@ -101,25 +99,24 @@
     <a href="#contact-info">Contact</a>
 </nav>
 
-
 <section id="about_me" class="hidden">
     <h2>About Me</h2>
-	<p>Thanks for visiting! My name is Grant Shirley, and I'm a Master's student in Teacher Education at ETSU. I am excited about math history, and enthusiastic about math and science education. During my bachelor's degree, I spent a lot of time doing mathematics research, and I aim to eventually get back into it!</p>
-		<h2>Education</h2>
-	<ul>
-		 <li><strong>Bachelor of Science in Mathematics, Minor in Physics</strong></li>
-        East Tennessee State University, graduated May 2025
-		 <li><strong>Master of Arts in Teaching, Secondary Education Concentration</strong></li>
-        East Tennessee State University, expected graduation May 2026
-	</ul>
+    <p>Thanks for visiting! My name is Grant Shirley, and I'm a Master's student in Teacher Education at ETSU. I am excited about math history, and enthusiastic about math and science education. During my bachelor's degree, I spent a lot of time doing mathematics research, and I aim to eventually get back into it!</p>
+
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor of Science in Mathematics, Minor in Physics</strong><br>
+            East Tennessee State University, graduated May 2025</li>
+        <li><strong>Master of Arts in Teaching, Secondary Education Concentration</strong><br>
+            East Tennessee State University, expected graduation May 2026</li>
+    </ul>
 
     <h2>Research Experience</h2>
     <ul>
         <li>
             <strong>Peer Mentor</strong><br>
             Combinatorics and Coding Theory in the Tropics<br>
-            June 2024 - August 2024<br>
-            Ponce, PR
+            June 2024 - August 2024, Ponce, PR
             <ul>
                 <li>Gave lectures on topics such as mathematical reasoning, linear algebra, abstract algebra, and combinatorics.</li>
                 <li>Assisted fellow REU students with mathematical study and research in several projects, while also participating in research.</li>
@@ -127,89 +124,100 @@
                 <li>Provided guidance and mentorship to younger mathematics and computer science students.</li>
                 <li>Assisted in conflict resolution among REU participants and wrote a code of conduct for the shared living space.</li>
             </ul>
-        </li><br>
+        </li>
         <li>
             <strong>Researcher</strong><br>
             Combinatorics and Coding Theory in the Tropics<br>
-            June 2023 - August 2023<br>
-            Ponce, PR
+            June 2023 - August 2023, Ponce, PR
             <ul>
-                <li>Studied under experienced mathematicians in various topics such as Abstract Algebra, Coding Theory and Number Theory.</li>
-                <li>Engaged in guided and self-directed mathematics research in Combinatorics, Graph Theory and Matrix Theory.</li>
+                <li>Studied under experienced mathematicians in topics such as Abstract Algebra, Coding Theory, and Number Theory.</li>
+                <li>Engaged in guided and self-directed mathematics research in Combinatorics, Graph Theory, and Matrix Theory.</li>
                 <li>Collaborated with other undergraduate mathematics students on projects spanning various discrete math topics.</li>
             </ul>
-		</li>
-	</ul>
+        </li>
+    </ul>
+</section>
 
 <section id="research" class="hidden">
     <h2>Research</h2>
-<p>My research interests so far have been combinatorics, graph theory, and discrete statistics, and I'm open to collaboration on projects in those areas, as well as number theory, matroid theory, and mathematical physics! The following are three of the summer REU projects that I'm currently working with fellow students to prepare for submission to journals, along with slides I've used to present them, either at conferences or to REU colleagues:</p>
+    <p>My research interests so far have been combinatorics, graph theory, and discrete statistics, and I'm open to collaboration on projects in those areas, as well as number theory, matroid theory, and mathematical physics!</p>
+
     <h3>REU Projects</h3>
     <ul>
         <li>
             <strong>Fubini Rankings and the Hunt for the Lucky Statistic</strong><br>
             Used combinatorics and discrete statistics to study sets of parking functions and their properties.
-		<a href="REU_2024_Ponce___Lucky_Cars-8.pdf" target="_blank">[View Slides]</a>
-        </li><br>
+            <a href="REU_2024_Ponce___Lucky_Cars-8.pdf" target="_blank">[View Slides]</a>
+        </li>
         <li>
             <strong>deBruijn Cycles: A Novel Approach</strong><br>
             Used graph theory and combinatorial methods to approach original applications of deBruijn's Theorem to mathematical objects including injective functions, ranked permutations, and multisets.
-		<a href="Ucycles2023-7.pdf" target="_blank">[View Slides]</a>
+            <a href="Ucycles2023-7.pdf" target="_blank">[View Slides]</a>
         </li>
-    </ul>
-I've also continued work on deBruijn cycles with a professor at ETSU to prepare the following for submission:
-    <ul>
         <li>
             <strong>Universal Cycles of Integer Partitions and Compositions</strong><br>
-            Used graph theory and combinatorial methods to study deBruijn cycles of specialized integer sequences.
-		<a href="Ucycles_and_Gucycles_of_Integer_Compositions_and_Partitions-6.pdf" target="_blank">[View Slides]</a>
+            Continued work with ETSU faculty on deBruijn cycles of specialized integer sequences.
+            <a href="Ucycles_and_Gucycles_of_Integer_Compositions_and_Partitions-6.pdf" target="_blank">[View Slides]</a>
+        </li>
+        <li>
+            <strong>Rose Conjecture: Total Acquisition on Diameter Two Graphs</strong><br>
+            Approached an unproven conjecture regarding bipartite multigraphs using graph theory, combinatorics, probability, and matrix theory.
+            <a href="Rose_Lovasz_2024-3.pdf" target="_blank">[View Slides]</a>
         </li>
     </ul>
-The following is a project I've worked on with an REU group but we are not currently preparing for submission:
+
+    <h2>Conferences</h2>
     <ul>
-      <li>
-          <strong>Rose Conjecture: Total Acquisition on Diameter Two Graphs</strong><br>
-          Used methods from graph theory, combinatorics, probability, and matrix theory to approach an unproven conjecture from a previous REU session regarding a property of bipartite multigraphs. As of yet, it remains unproven but we are continuing to work on it.
-	      <a href="Rose_Lovasz_2024-3.pdf" target="_blank">[View Slides]</a>
-      </li>
-    </ul>
-<h2>Conferences</h2>
-The following are conferences I've attended to present research and learn more about active math research and relevant programs:
-    <ul>
-        <li><strong>Joint Mathematics Meetings 2024</strong></li>
+        <li>
+            <strong>Joint Mathematics Meetings 2024</strong>
             <ul>
-                <li>Presented the following at AMS Contributed Paper Session on Combinatorics, V</li>
+                <li>
+                    Presented at AMS Contributed Paper Session on Combinatorics, V
                     <ul>
                         <li>deBruijn Cycles: A Novel Approach</li>
-                        <li>Rose Conjecture: Total Acquisition on Diameter Two Graphs</li><br>
+                        <li>Rose Conjecture: Total Acquisition on Diameter Two Graphs</li>
                     </ul>
+                </li>
             </ul>
-        <li><strong>Society of Physics Students Spring 2024 Zone 8 Meeting</strong></li><br>
-        <li><strong>Mathematics Association of America 2024 Southeast Section Meeting</strong></li>
+        </li>
+        <li><strong>Society of Physics Students Spring 2024 Zone 8 Meeting</strong></li>
+        <li>
+            <strong>Mathematics Association of America 2024 Southeast Section Meeting</strong>
             <ul>
-                <li>Presented the following at Special Session: Theory of Integer Sequences</li>
+                <li>
+                    Presented at Special Session: Theory of Integer Sequences
                     <ul>
                         <li>Universal Cycles of Integer Partitions and Compositions</li>
                     </ul>
+                </li>
             </ul>
-	 <li><strong>Society of Physics Students Fall 2024 Zone 8 Meeting</strong></li>
-	    <ul>
-		<li>As an officer of the SPS chapter hosting the conference, I assisted in the planning process by filling out paperwork to request meeting spaces at our university, and helping plan events such as physics jeopardy, a pumpkin drop and a paper airplane contest.</li>
-	    </ul>
-	 <li><strong>American Physical Society 2024 Southeastern Section Meeting</strong></li>
-	 <li><strong>2024 Math Alliance Field of Dreams Conference</strong></li>
-	 <li><strong>Joint Mathematics Meetings 2025</strong></li>
-	    <ul>
-		<li>Presented the following at AMS Special Session on Solutions of Probability or Applied Random Process Problems Using Linear Algebraic or Combinatorial Methods, I</li>
-		    <ul>
-			<li>Towards a Proof of the McCarty Conjecture</li>
-		    </ul>
-		<li>Presented the following at AMS Contributed Paper Session on Combinatorics, Graph Theory, Order, and General Algebraic Systems, I</li>
-		    <ul>
-			<li>On the Lucky Statistic of Fubini Rankings</li>
-			<li>Fubini Rankings with a Fixed Set of Lucky Cars</li>
-		    </ul>
-	   </ul>
+        </li>
+        <li>
+            <strong>Society of Physics Students Fall 2024 Zone 8 Meeting</strong>
+            <ul>
+                <li>Helped plan and organize events (physics jeopardy, pumpkin drop, paper airplane contest) as an officer of the hosting SPS chapter.</li>
+            </ul>
+        </li>
+        <li><strong>American Physical Society 2024 Southeastern Section Meeting</strong></li>
+        <li><strong>2024 Math Alliance Field of Dreams Conference</strong></li>
+        <li>
+            <strong>Joint Mathematics Meetings 2025</strong>
+            <ul>
+                <li>
+                    Presented at AMS Special Session on Solutions of Probability or Applied Random Process Problems Using Linear Algebraic or Combinatorial Methods, I
+                    <ul>
+                        <li>Towards a Proof of the McCarty Conjecture</li>
+                    </ul>
+                </li>
+                <li>
+                    Presented at AMS Contributed Paper Session on Combinatorics, Graph Theory, Order, and General Algebraic Systems, I
+                    <ul>
+                        <li>On the Lucky Statistic of Fubini Rankings</li>
+                        <li>Fubini Rankings with a Fixed Set of Lucky Cars</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
     </ul>
 </section>
 
@@ -221,27 +229,24 @@ The following are conferences I've attended to present research and learn more a
     <h2>Contact Information</h2>
     <p>Thank you for checking out my website, and I hope you decide to reach out! Feel free to contact me in the following ways:</p>
     <p>Email: grant_shirley@outlook.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/grant-shirley-5a015b221/" target="_blank">https://www.linkedin.com/in/grant-shirley-5a015b221/</a></p>
-    <p>GitHub: <a href="https://github.com/grant-shirley" target="_blank">github.com/grant-shirley</a></p>
-    <p>Twitter: <a href="https://x.com/combinat0rics" target="_blank">https://x.com/combinat0rics</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/grant-shirley-5a015b221/" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/grant-shirley" target="_blank">GitHub Profile</a></p>
+    <p>Twitter: <a href="https://x.com/combinat0rics" target="_blank">@combinat0rics</a></p>
 </section>
-
 
 <script>
     const links = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section');
 
-    // Function to display the selected section
     function displaySection(sectionId) {
         sections.forEach(section => section.classList.add('hidden'));
         document.querySelector(sectionId).classList.remove('hidden');
     }
 
-    // Check for the last viewed section in localStorage
     const lastSection = localStorage.getItem('lastSection') || '#about_me';
     displaySection(lastSection);
 
-        links.forEach(link => {
+    links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetSection = link.getAttribute('href');
